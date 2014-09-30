@@ -6,7 +6,7 @@ FROM ubuntu:latest
 MAINTAINER Hector Castro hector@basho.com
 
 # Update the APT CACHE
-RUN sed -i.bak 's/main$/main universe/' /etc/apt/sources/list
+RUN sed -i.bak 's/main$/main universe/' /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get upgrade -y
 
